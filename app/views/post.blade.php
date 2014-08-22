@@ -1,12 +1,16 @@
-@extends('templates.default') // pull in header and single line comment phpfooter
+@extends('templates.default') 
 
 @section('content')
 	<article>
-		<h2>Post Title Goes Here</h2>
+
+		<h2>{{ $id->id }}</h2>
+		<h2>huh</h2>
 		<p> [images will go here] </p>
 		<p>Price goes here</p>
-		<p>Condition goes here</p>
-		<p>Post info goes here. The couch smells like bacon. </p>
+		<p>{{if ($id->item_condition = 'G') {
+			echo 'Good';
+		} }}</p>
+		<p>{{ $id->post_info }}</p>
 		<a href="">Contact Seller Button</a>
 	</article>
 @stop	
