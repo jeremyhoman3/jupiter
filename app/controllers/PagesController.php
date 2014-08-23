@@ -6,6 +6,10 @@ class PagesController extends BaseController {
 		return View::make('howItWorks');
 	}
 
+	public function contact() {
+		return View::make('contact');
+	}
+
 	public function postItem() {
 		return View::make('postItem');
 	}
