@@ -35,7 +35,7 @@
 
  	<div>
  	{{ Form::label('item_condition', 'Condition') }}
- 	{{ Form::select('item_condition', array('E' => 'Excellent', 'G' => 'Good', 'S' => 'So-so'), 'G') }}
+ 	{{ Form::select('item_condition', array('Excellent' => 'Excellent', 'Good' => 'Good', 'So-so' => 'So-so'), 'G') }}
  	</div></br>
 
  	<div>
